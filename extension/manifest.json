@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Seen",
+  "version": "0.5.0",
+  "description": "Meaningful DOM checkpoints plus local page and visible-item attention. No website requests, never Incognito.",
+  "minimum_chrome_version": "120",
+  "permissions": ["storage", "unlimitedStorage", "scripting", "activeTab", "alarms", "idle", "nativeMessaging"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "background": {"service_worker": "background.js", "type": "module"},
+  "icons": {"16": "icon-16.png", "32": "icon-32.png", "48": "icon-48.png", "128": "icon-128.png"},
+  "action": {
+    "default_title": "Seen", "default_popup": "popup.html",
+    "default_icon": {"16": "icon-16.png", "24": "icon-24.png", "32": "icon-32.png"}
+  },
+  "options_page": "archive.html",
+  "incognito": "not_allowed",
+  "content_security_policy": {
+    "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+  }
+}

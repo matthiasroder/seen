@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Seen DOM fixture</title>
+  <style>body{font:15px system-ui;margin:30px;max-width:1000px}#results{white-space:pre-wrap}#offscreen{margin-top:1600px}.clipped{height:20px;overflow:hidden}</style>
+  <script src="demo-adapter.js"></script>
+  <script src="../extension/capture.js" defer></script>
+  <script src="fixture.js" type="module"></script>
+</head>
+<body>
+  <h1>Seen: full DOM checks</h1>
+  <button id="run">Run DOM and delivery checks</button>
+  <pre id="results" role="status">Ready. Synthetic local data only.</pre>
+  <main id="fixture">
+    <p id="visible" data-preserve="attribute value">VISIBLE_DOM_MARKER</p>
+    <p hidden>HIDDEN_DOM_MARKER</p>
+    <div class="clipped">Beginning<br>COLLAPSED_DOM_MARKER</div>
+    <form><input id="field" value="initial"><input id="password" type="password" value="synthetic-only"><textarea id="area">initial text</textarea><select id="select"><option>A</option><option>B</option></select></form>
+    <script type="application/json" id="data">{"fixture":"SCRIPT_DOM_MARKER"}</script>
+    <template id="template"><b>TEMPLATE_DOM_MARKER</b></template>
+    <div id="shadow"></div><div id="closed"></div>
+    <!-- COMMENT_DOM_MARKER -->
+    <p id="offscreen">OFFSCREEN_DOM_MARKER</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Seen",
+  "version": "0.4.0",
+  "description": "Meaningful top-level DOM capture for Seen. No website requests. No private tabs.",
+  "icons": {"128": "icon-128.png"},
+  "permissions": ["storage", "unlimitedStorage", "nativeMessaging", "tabs"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {"scripts": ["background.js"]},
+  "content_scripts": [{"matches": ["http://*/*", "https://*/*"], "js": ["capture.js"], "all_frames": false, "run_at": "document_idle"}],
+  "action": {"default_title": "Seen", "default_popup": "popup.html", "default_icon": "icon-128.png"},
+  "incognito": "not_allowed",
+  "content_security_policy": {"extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"}
+}

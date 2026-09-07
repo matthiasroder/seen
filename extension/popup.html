@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Seen</title><link rel="icon" type="image/png" href="icon-32.png"><link rel="stylesheet" href="style.css"><script type="module" src="popup.js"></script>
+</head>
+<body class="popup">
+  <header class="topbar"><a class="wordmark" href="archive.html" target="_blank">seen<span>.</span></a><button id="pause" class="status" aria-pressed="false">Loading…</button></header>
+  <main>
+    <section class="site-card">
+      <p class="eyebrow">THIS SITE</p><h1 id="hostname">Checking page…</h1>
+      <p id="site-note" class="muted">All regular websites. Never Incognito.</p>
+      <a href="archive.html" class="primary" target="_blank">Open archive ↗</a>
+    </section>
+    <section class="recent"><div class="section-heading"><h2>Recently seen</h2></div><div id="recent-list"></div></section>
+    <p id="error" class="error" role="alert" hidden></p>
+  </main>
+  <footer><span class="dot"></span> On your device. Outside Chrome.</footer>
+</body></html>

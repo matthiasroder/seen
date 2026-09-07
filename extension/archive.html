@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Seen — your archive</title><link rel="icon" type="image/png" href="icon-32.png"><link rel="stylesheet" href="style.css"><script type="module" src="archive.js"></script>
+</head>
+<body class="archive">
+  <header class="topbar"><a class="wordmark" href="archive.html">seen<span>.</span></a><div class="top-actions"><span class="local-label"><span class="dot"></span> Local only</span><button id="pause" class="status" aria-pressed="false">Loading…</button><button id="settings-toggle" class="quiet" aria-expanded="false" aria-controls="settings">Settings</button></div></header>
+  <main class="workspace">
+    <section class="library" aria-label="Saved pages">
+      <div class="library-heading"><p class="eyebrow">YOUR BROWSING, REMEMBERED</p><div class="library-title-row"><h1 id="library-title">Open a day.</h1><button id="all-days" class="quiet" hidden>← All days</button></div></div>
+      <form id="search-form" class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search the whole archive…" aria-label="Search your archive" autocomplete="off"><button type="submit">Search</button></form>
+      <div class="list-heading"><span id="count" aria-live="polite">Loading…</span><span id="list-context">CAPTURES</span></div>
+      <div id="page-list" class="page-list"></div>
+      <button id="more" class="quiet" hidden>Load more snapshots</button>
+      <p id="error" class="error" role="alert" hidden></p>
+    </section>
+    <section id="reader" class="reader" aria-label="DOM reader"><div class="reader-empty"><span class="empty-symbol" aria-hidden="true">↖</span><h2>A place for what stays with you.</h2><p>Choose a snapshot to inspect its DOM.<br>No website is loaded in this view.</p></div></section>
+  </main>
+  <aside id="settings" class="settings" hidden aria-label="Archive settings">
+    <div class="section-heading"><h2>Keep it simple.</h2><button id="settings-close" class="quiet" aria-label="Close settings">✕</button></div>
+    <h3>All sites. Regular windows only.</h3><p class="muted">Automatic capture on HTTP and HTTPS websites. Incognito is always excluded. Chrome’s protected pages cannot be captured. Pause any time from the toolbar.</p>
+    <h3>Outside Chrome</h3><p id="database-status" class="muted">Checking SQLite…</p><p id="queue-status" class="fine-print"></p>
+    <details><summary>Connect the local helper</summary><p class="fine-print">From your Seen checkout, run this once in Terminal, then reload Seen:</p><code id="setup-command" class="setup-command"></code></details>
+    <button id="retry" class="secondary">Retry delivery</button>
+    <h3>Capture diagnostics</h3><p class="muted">Recent local capture events and rejection reasons. No DOM content. The log keeps at most 60 entries.</p>
+    <p id="diagnostic-file" class="fine-print"></p>
+    <pre id="diagnostic-log" class="diagnostic-log">No capture events recorded.</pre>
+    <button id="clear-diagnostics" class="quiet">Clear diagnostics</button>
+    <h3>DOM only. Every website equal.</h3><p class="muted">HTML, hidden content, scripts, attributes, accessible shadow DOM, frames, and live form state. No content filtering or separate text archive. No resource downloads. Captured scripts are never executed in this viewer.</p>
+    <h3>Keep everything saved</h3><p class="muted">No automatic expiry or size-based deletion. Identical DOM payloads share storage. Disk use grows as you browse.</p>
+    <div class="settings-actions"><button id="export" class="secondary">Export selected DOM</button><button id="clear" class="danger">Clear DOM archive</button></div>
+    <button id="legacy" class="quiet">Export previous text archive</button>
+    <p class="fine-print">No sync or cloud. Storage is not separately encrypted. Checkpoint capture is best-effort; fast changes or closing a tab may lose an in-flight snapshot. Old text records are preserved separately, not converted into DOM.</p>
+  </aside>
+  <dialog id="confirm-clear"><h2>Clear your DOM archive?</h2><p>This removes every DOM snapshot from SQLite and Chrome’s delivery queue. Back up the database first. Previous text records are unaffected.</p><form method="dialog"><button value="cancel" class="secondary">Keep it</button><button value="clear" class="danger">Clear DOM archive</button></form></dialog>
+</body></html>

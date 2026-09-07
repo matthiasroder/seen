@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seen Search"
+  short_description: "Find captured content in your local DOM archive"
+  default_prompt: "Use $seen-search to find the content I describe in my local browsing archive, with direct post links where captured and capture times."

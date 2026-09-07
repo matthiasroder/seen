@@ -1,0 +1,41 @@
+# Browsing archives and exports never belong in source control.
+/data/
+/exports/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+
+# Generated packages, screenshots, and machine-specific helper registration.
+/dist/
+/logs/
+/native/launch-host
+com.seen.archive.json
+/mobile-state*/
+/mobile/apple/build/
+xcuserdata/
+*.xcuserstate
+*.mobileprovision
+
+# Local build/runtime state.
+.DS_Store
+node_modules/
+__pycache__/
+*.py[cod]
+*.lock
+
+# Local configuration and credentials.
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+*secret*
+*token*
+
+# Local project notes and planning state.
+/seen_status.md
+/.matters/
+/.loops/

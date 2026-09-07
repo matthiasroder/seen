@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000007 = {isa = PBXBuildFile; fileRef = A10000000000000000000008; };
+		A10000000000000000000001 = {isa = PBXBuildFile; fileRef = A10000000000000000000005; };
+		A10000000000000000000002 = {isa = PBXBuildFile; fileRef = A10000000000000000000006; };
+		A10000000000000000000003 = {isa = PBXBuildFile; fileRef = A10000000000000000000005; };
+		A10000000000000000000004 = {isa = PBXBuildFile; fileRef = A10000000000000000000006; };
+		39EDAE8D304613C300FB8BAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDAE8C304613C300FB8BAB /* AppDelegate.swift */; };
+		39EDAE91304613C300FB8BAB /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAE8F304613C300FB8BAB /* Main.html */; };
+		39EDAE93304613C300FB8BAB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAE92304613C300FB8BAB /* Icon.png */; };
+		39EDAE95304613C300FB8BAB /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAE94304613C300FB8BAB /* Style.css */; };
+		39EDAE97304613C300FB8BAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDAE96304613C300FB8BAB /* SceneDelegate.swift */; };
+		39EDAE99304613C300FB8BAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDAE98304613C300FB8BAB /* ViewController.swift */; };
+		39EDAE9C304613C300FB8BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAE9A304613C300FB8BAB /* LaunchScreen.storyboard */; };
+		39EDAE9F304613C300FB8BAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAE9D304613C300FB8BAB /* Main.storyboard */; };
+		39EDAEA7304613C300FB8BAB /* SeenMobile Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 39EDAEA6304613C300FB8BAB /* SeenMobile Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		39EDAEAC304613C400FB8BAB /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDAEAB304613C400FB8BAB /* SafariWebExtensionHandler.swift */; };
+		39EDAEAE304613C400FB8BAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAEA0304613C300FB8BAB /* Assets.xcassets */; };
+		39EDAEC1304613C400FB8BAB /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAEB9304613C400FB8BAB /* popup.js */; };
+		39EDAEC2304613C400FB8BAB /* core.js in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAEBA304613C400FB8BAB /* core.js */; };
+		39EDAEC3304613C400FB8BAB /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAEBB304613C400FB8BAB /* background.js */; };
+		39EDAEC4304613C400FB8BAB /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAEBC304613C400FB8BAB /* popup.html */; };
+		39EDAEC5304613C400FB8BAB /* store.js in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAEBD304613C400FB8BAB /* store.js */; };
+		39EDAEC6304613C400FB8BAB /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAEBE304613C400FB8BAB /* manifest.json */; };
+		39EDAEC7304613C400FB8BAB /* capture.js in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAEBF304613C400FB8BAB /* capture.js */; };
+		39EDAEC8304613C400FB8BAB /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 39EDAEC0304613C400FB8BAB /* popup.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39EDAEA8304613C300FB8BAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39EDAE81304613C300FB8BAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39EDAEA5304613C300FB8BAB;
+			remoteInfo = "SeenMobile Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		39EDAEB4304613C400FB8BAB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				39EDAEA7304613C300FB8BAB /* SeenMobile Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000008 = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon-128.png; path = ../../../extension/icon-128.png; sourceTree = "<group>"; };
+		A10000000000000000000005 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SeenCore.swift; path = ../../shared/SeenCore.swift; sourceTree = SOURCE_ROOT; };
+		A10000000000000000000006 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SeenTransport.swift; path = ../../shared/SeenTransport.swift; sourceTree = SOURCE_ROOT; };
+		39EDAE89304613C300FB8BAB /* SeenMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeenMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EDAE8C304613C300FB8BAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39EDAE90304613C300FB8BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		39EDAE92304613C300FB8BAB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		39EDAE94304613C300FB8BAB /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		39EDAE96304613C300FB8BAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39EDAE98304613C300FB8BAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39EDAE9B304613C300FB8BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39EDAE9E304613C300FB8BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39EDAEA0304613C300FB8BAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39EDAEA1304613C300FB8BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39EDAEA6304613C300FB8BAB /* SeenMobile Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SeenMobile Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EDAEAB304613C400FB8BAB /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		39EDAEAD304613C400FB8BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39EDAEB9304613C400FB8BAB /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../../extension/popup.js; sourceTree = "<group>"; };
+		39EDAEBA304613C400FB8BAB /* core.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = core.js; path = ../../../extension/core.js; sourceTree = "<group>"; };
+		39EDAEBB304613C400FB8BAB /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../extension/background.js; sourceTree = "<group>"; };
+		39EDAEBC304613C400FB8BAB /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../extension/popup.html; sourceTree = "<group>"; };
+		39EDAEBD304613C400FB8BAB /* store.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = store.js; path = ../../../extension/store.js; sourceTree = "<group>"; };
+		39EDAEBE304613C400FB8BAB /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
+		39EDAEBF304613C400FB8BAB /* capture.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = capture.js; path = ../../../extension/capture.js; sourceTree = "<group>"; };
+		39EDAEC0304613C400FB8BAB /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = ../../../extension/popup.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39EDAE86304613C300FB8BAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EDAEA3304613C300FB8BAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39EDAE80304613C300FB8BAB = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000005,
+				A10000000000000000000006,
+				39EDAE8B304613C300FB8BAB /* SeenMobile */,
+				39EDAEAA304613C300FB8BAB /* SeenMobile Extension */,
+				39EDAE8A304613C300FB8BAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39EDAE8A304613C300FB8BAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39EDAE89304613C300FB8BAB /* SeenMobile.app */,
+				39EDAEA6304613C300FB8BAB /* SeenMobile Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39EDAE8B304613C300FB8BAB /* SeenMobile */ = {
+			isa = PBXGroup;
+			children = (
+				39EDAE8C304613C300FB8BAB /* AppDelegate.swift */,
+				39EDAE96304613C300FB8BAB /* SceneDelegate.swift */,
+				39EDAE98304613C300FB8BAB /* ViewController.swift */,
+				39EDAE9A304613C300FB8BAB /* LaunchScreen.storyboard */,
+				39EDAE9D304613C300FB8BAB /* Main.storyboard */,
+				39EDAEA0304613C300FB8BAB /* Assets.xcassets */,
+				39EDAEA1304613C300FB8BAB /* Info.plist */,
+				39EDAE8E304613C300FB8BAB /* Resources */,
+			);
+			path = SeenMobile;
+			sourceTree = "<group>";
+		};
+		39EDAE8E304613C300FB8BAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39EDAE8F304613C300FB8BAB /* Main.html */,
+				39EDAE92304613C300FB8BAB /* Icon.png */,
+				39EDAE94304613C300FB8BAB /* Style.css */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		39EDAEAA304613C300FB8BAB /* SeenMobile Extension */ = {
+			isa = PBXGroup;
+			children = (
+				39EDAEB8304613C400FB8BAB /* Resources */,
+				39EDAEAB304613C400FB8BAB /* SafariWebExtensionHandler.swift */,
+				39EDAEAD304613C400FB8BAB /* Info.plist */,
+			);
+			path = "SeenMobile Extension";
+			sourceTree = "<group>";
+		};
+		39EDAEB8304613C400FB8BAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000008,
+				39EDAEB9304613C400FB8BAB /* popup.js */,
+				39EDAEBA304613C400FB8BAB /* core.js */,
+				39EDAEBB304613C400FB8BAB /* background.js */,
+				39EDAEBC304613C400FB8BAB /* popup.html */,
+				39EDAEBD304613C400FB8BAB /* store.js */,
+				39EDAEBE304613C400FB8BAB /* manifest.json */,
+				39EDAEBF304613C400FB8BAB /* capture.js */,
+				39EDAEC0304613C400FB8BAB /* popup.css */,
+			);
+			name = Resources;
+			path = "SeenMobile Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39EDAE88304613C300FB8BAB /* SeenMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39EDAEB5304613C400FB8BAB /* Build configuration list for PBXNativeTarget "SeenMobile" */;
+			buildPhases = (
+				39EDAE85304613C300FB8BAB /* Sources */,
+				39EDAE86304613C300FB8BAB /* Frameworks */,
+				39EDAE87304613C300FB8BAB /* Resources */,
+				39EDAEB4304613C400FB8BAB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39EDAEA9304613C300FB8BAB /* PBXTargetDependency */,
+			);
+			name = SeenMobile;
+			packageProductDependencies = (
+			);
+			productName = SeenMobile;
+			productReference = 39EDAE89304613C300FB8BAB /* SeenMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39EDAEA5304613C300FB8BAB /* SeenMobile Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39EDAEB1304613C400FB8BAB /* Build configuration list for PBXNativeTarget "SeenMobile Extension" */;
+			buildPhases = (
+				39EDAEA2304613C300FB8BAB /* Sources */,
+				39EDAEA3304613C300FB8BAB /* Frameworks */,
+				39EDAEA4304613C300FB8BAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SeenMobile Extension";
+			packageProductDependencies = (
+			);
+			productName = "SeenMobile Extension";
+			productReference = 39EDAEA6304613C300FB8BAB /* SeenMobile Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39EDAE81304613C300FB8BAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					39EDAE88304613C300FB8BAB = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					39EDAEA5304613C300FB8BAB = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 39EDAE84304613C300FB8BAB /* Build configuration list for PBXProject "SeenMobile" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39EDAE80304613C300FB8BAB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 39EDAE8A304613C300FB8BAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39EDAE88304613C300FB8BAB /* SeenMobile */,
+				39EDAEA5304613C300FB8BAB /* SeenMobile Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39EDAE87304613C300FB8BAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EDAE9C304613C300FB8BAB /* LaunchScreen.storyboard in Resources */,
+				39EDAEAE304613C400FB8BAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EDAEA4304613C300FB8BAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000007,
+				39EDAEC1304613C400FB8BAB /* popup.js in Resources */,
+				39EDAEC5304613C400FB8BAB /* store.js in Resources */,
+				39EDAEC7304613C400FB8BAB /* capture.js in Resources */,
+				39EDAEC4304613C400FB8BAB /* popup.html in Resources */,
+				39EDAEC8304613C400FB8BAB /* popup.css in Resources */,
+				39EDAEC3304613C400FB8BAB /* background.js in Resources */,
+				39EDAEC6304613C400FB8BAB /* manifest.json in Resources */,
+				39EDAEC2304613C400FB8BAB /* core.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39EDAE85304613C300FB8BAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001,
+				A10000000000000000000002,
+				39EDAE99304613C300FB8BAB /* ViewController.swift in Sources */,
+				39EDAE8D304613C300FB8BAB /* AppDelegate.swift in Sources */,
+				39EDAE97304613C300FB8BAB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EDAEA2304613C300FB8BAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000003,
+				A10000000000000000000004,
+				39EDAEAC304613C400FB8BAB /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39EDAEA9304613C300FB8BAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39EDAEA5304613C300FB8BAB /* SeenMobile Extension */;
+			targetProxy = 39EDAEA8304613C300FB8BAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39EDAE8F304613C300FB8BAB /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39EDAE90304613C300FB8BAB /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		39EDAE9A304613C300FB8BAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39EDAE9B304613C300FB8BAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		39EDAE9D304613C300FB8BAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39EDAE9E304613C300FB8BAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39EDAEAF304613C400FB8BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39EDAEB0304613C400FB8BAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39EDAEB2304613C400FB8BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SeenMobile Extension/Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "SeenMobile Extension/Seen.entitlements";
+				INFOPLIST_KEY_CFBundleDisplayName = Seen;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthiasroder.SeenMobile.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39EDAEB3304613C400FB8BAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SeenMobile Extension/Info.plist";
+				CODE_SIGN_ENTITLEMENTS = "SeenMobile Extension/Seen.entitlements";
+				INFOPLIST_KEY_CFBundleDisplayName = Seen;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthiasroder.SeenMobile.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39EDAEB6304613C400FB8BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SeenMobile/Info.plist;
+				CODE_SIGN_ENTITLEMENTS = SeenMobile/Seen.entitlements;
+				INFOPLIST_KEY_CFBundleDisplayName = Seen;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthiasroder.SeenMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39EDAEB7304613C400FB8BAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SeenMobile/Info.plist;
+				CODE_SIGN_ENTITLEMENTS = SeenMobile/Seen.entitlements;
+				INFOPLIST_KEY_CFBundleDisplayName = Seen;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthiasroder.SeenMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39EDAE84304613C300FB8BAB /* Build configuration list for PBXProject "SeenMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EDAEAF304613C400FB8BAB /* Debug */,
+				39EDAEB0304613C400FB8BAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39EDAEB1304613C400FB8BAB /* Build configuration list for PBXNativeTarget "SeenMobile Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EDAEB2304613C400FB8BAB /* Debug */,
+				39EDAEB3304613C400FB8BAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39EDAEB5304613C400FB8BAB /* Build configuration list for PBXNativeTarget "SeenMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EDAEB6304613C400FB8BAB /* Debug */,
+				39EDAEB7304613C400FB8BAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39EDAE81304613C300FB8BAB /* Project object */;
+}
